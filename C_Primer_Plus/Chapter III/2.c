@@ -2,11 +2,11 @@
 
 int main(void)
 {
-    char alpha;
+    int alpha;
     
     printf("Please Enter the ASCII __\b\b");
     scanf("%d", &alpha);
-    printf("%c", alpha);
+    printf("ASCII %d is %c.\n", alpha, alpha);
 
     return 0;
 };

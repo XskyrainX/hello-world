@@ -1,5 +1,7 @@
 #include <stdio.h>
 
+#define CM_PER_INCH 2.54
+
 int main(void)
 {
     int inch;
@@ -7,6 +9,6 @@ int main(void)
     printf("Please Enter Your Height: ");
     scanf("%d", &inch);
 
-    printf("Your Height is: %fcm\n", inch * 2.54);
+    printf("Your Height is: %fcm\n", inch * CM_PER_INCH);
     return 0;
 }

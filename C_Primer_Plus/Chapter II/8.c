@@ -1,23 +1,25 @@
 #include <stdio.h>
 
-void two(void)
-{
-    printf("\ntwo\n");
-}
-
-void one_three(void)
-{
-    printf("one");
-    two();
-    printf("three");
-}
+void two(void);
+void one_three(void);
 
 int main(void)
 {
-    printf("starting now:\n");
+    printf("Starting now:\n");
     one_three();
-    printf("\ndone!");
+    printf("done!\n");
 
     return 0;
 }
 
+void two(void)
+{
+    printf("two\n");
+}
+
+void one_three(void)
+{
+    printf("one\n");
+    two();
+    printf("three\n");
+}

@@ -1,9 +1,11 @@
 #include <stdio.h>
 
+#define AGE 22
+#define DAYS_PER_YEAR 365
+
 int main()
 {
-    int age = 22;
+    printf("My age: %d, which is %d days", AGE, AGE * DAYS_PER_YEAR);
 
-    printf("My age: %d, which is %d days", age, age * 365);
     return 0;
 }

@@ -1,9 +1,6 @@
 #include <stdio.h>
 
-void print_Smile(void)
-{
-    printf("Smile!");
-}
+void print_Smile(void);
 
 int main(void)
 {
@@ -22,4 +19,11 @@ int main(void)
     print_Smile();
 
     return 0;
+}
+
+void print_Smile(void)
+{
+    printf("Smile!");
+
+    return;
 }
