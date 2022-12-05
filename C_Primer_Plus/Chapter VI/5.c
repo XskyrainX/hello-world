@@ -23,6 +23,8 @@ int main(void)
         
         printf("\n");
     }
+    getchar();
+    getchar();
     
     return 0;
 }

@@ -2,14 +2,16 @@
 
 int main(void)
 {
-    float a, b;
+    double a, b;
     
     printf("Printf Enter Two float type: ");
-
-    while (scanf("%f%f", &a, &b))
+    while (2 == scanf("%lf%lf", &a, &b))
     {
-        printf("%f\n", (a-b) / (a*b));
+        printf("(%g - %g) / (%g * %g)", a, b, a, b);
+        printf(" = %g.\n", (a-b) / (a*b));
+        printf("You can enter again (q to quit)\n");
     }
+    printf("Done.\n");
     
     return 0;
 }

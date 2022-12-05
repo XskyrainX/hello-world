@@ -2,15 +2,14 @@
 
 int main(void)
 {
-    for (int i = 4; i >= 0; i--)
+    for (size_t i = 1; i <= 5; i++)
     {
-        /* code */
-        for (size_t j = 0; j < 5 - i; j++)
+        for (size_t j = 0; j < i; j++)
         {
-            /* code */
             printf("$");
         }
         printf("\n");
     }
+    
     return 0;
 }

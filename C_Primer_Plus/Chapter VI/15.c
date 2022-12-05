@@ -5,21 +5,20 @@
 
 int main(void)
 {
-    char sss[SIZE];
     int i = 0;
+    char sss[SIZE];
 
-    for (size_t i = 0; i < SIZE; i++)
+    printf("Please enter a string:\n");
+
+    do
     {
         scanf("%c", &sss[i]);
-        if ('\n' == sss[i])
-        {
-            break;
-        }
-    }
+    } while (sss[i] != '\n' && ++i < SIZE);
     
-    for (size_t i = 1; i <= strlen(sss); i++)
+    printf("Reversing print of the string is:\n");
+    for (i--; i >= 0; i--)
     {
-        printf("%c", sss[strlen(sss) - i]);
+        printf("%c", sss[i]);
     }
     
     return 0;

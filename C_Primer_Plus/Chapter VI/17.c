@@ -1,14 +1,19 @@
 #include <stdio.h>
 
+#define TAX 0.08
+
 int main(void)
 {
-    long total = 1000000;
-    int year;
+    double total = 100.0;
+    int year = 0;
+
     do
     {
-        total = total * 1.08 - 100000;
-    } while (total < 0);
-
+        year++;
+        total += total * TAX;
+        total -= 10;
+        printf("(%d)account: %g.\n", year, total);
+    } while (total > 9);
     printf("cash will be out in: %d years", year);
 
     return 0;

@@ -1,7 +1,7 @@
 #include <stdio.h>
 
-#define LITER 3.785
-#define KILOMETER 1.609
+#define GALLON_TO_LITER 3.785F
+#define MILE_TO_KM 1.609F
 
 int main(void)
 {
@@ -16,6 +16,6 @@ int main(void)
     
     printf("Gallon usage per mile is %.1f\n", miles / fuel_usage);
 
-    printf("Liter per 100kilos is %.1f", (fuel_usage * LITER) / (miles * KILOMETER * 100));
+    printf("Liter per 100kilos is %.1f", (fuel_usage * GALLON_TO_LITER) / (miles * MILE_TO_KM * 100));
     return 0;
 }

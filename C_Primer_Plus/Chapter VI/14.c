@@ -24,16 +24,17 @@ int main(void)
             array2[i] = array1[i] + array2[i-1];
         }
     }
-
+    printf("Here are the results for array a:\n");
     for (size_t i = 0; i < SIZE; i++)
     {
-        printf("%10lf", array1[i]);
+        printf("%-10g", array1[i]);
     }
-    printf("\n");
+    printf("\nHere are the results for array b:\n");
     for (size_t i = 0; i < SIZE; i++)
     {
-        printf("%10lf", array2[i]);
+        printf("%-10g", array2[i]);
     }
-
+    printf("\nDone.\n");
+    
     return 0;
 }

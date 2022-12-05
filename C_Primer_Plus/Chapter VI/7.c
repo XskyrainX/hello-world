@@ -1,15 +1,20 @@
 #include <stdio.h>
 #include <string.h>
+#define LEN 100
 
 int main(void)
 {
-    char input_string[100];
+    char str[LEN];
+    
+    printf("Please Enter a word: \n");
+    scanf("%19s", str);
+    printf("The word is:\n");
+    printf("%s\n", str);
 
-    scanf("%s", input_string);
-
-    for (size_t i = 0; i <= strlen(input_string); i++)
+    printf("Reserving the world is:\n");
+    for (size_t i = 0; i <= strlen(str); i++)
     {
-        printf("%c", input_string[strlen(input_string) - i]);
+        printf("%c", str[strlen(str) - i]);
     }
 
     return 0;

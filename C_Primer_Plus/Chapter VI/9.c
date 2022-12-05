@@ -1,22 +1,24 @@
 #include <stdio.h>
 
-float caculate(float a, float b);
+double caculate(double a, double b);
 
 int main(void)
 {
-    float a, b;
+    double a, b;
     
     printf("Printf Enter Two float type: ");
-
-    while (scanf("%f%f", &a, &b))
+    while (2 == scanf("%lf%lf", &a, &b))
     {
-        printf("%f\n", caculate(a, b));
+        printf("(%g - %g) / (%g * %g)", a, b, a, b);
+        printf(" = %g.\n", caculate(a, b));
+        printf("You Can Enter again (q to quit).\n");
     }
-    
+    printf("Done.\n");
+
     return 0;
 }
 
-float caculate(float a, float b)
+double caculate(double a, double b)
 {
     return (a-b) / (a*b);
 }

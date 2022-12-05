@@ -3,15 +3,16 @@
 int main(void)
 {
 
-    for (int i = 5; i >= 0; i--)
+    for (size_t i = 1; i <= 6; i++)
     {
         /* code */
-        for (size_t j = 0; j < 6 - i; j++)
+        for (size_t j = 0; j < i; j++)
         {
             /* code */
             printf("%c", 'F' - j);
         }
         printf("\n");
     }
+    
     return 0;
 }

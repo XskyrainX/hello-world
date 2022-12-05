@@ -1,18 +1,19 @@
 #include <stdio.h>
 
+#define LEN 26
+
 int main(void)
 {
-    char alhpa[26];
-    alhpa[0] = 'a';
+    char alhpa[LEN];
 
-    for (size_t i = 1; i < 26; i++)
+    for (size_t i = 0; i < LEN; i++)
     {
-        alhpa[i] = alhpa[i-1] + 1; 
+        alhpa[i] = 'a' + i; 
     }
-
-    for (size_t i = 0; i < 26; i++)
+    printf("Here are %d letters.\n", LEN);
+    for (size_t i = 0; i < LEN; i++)
     {
-        printf("%c\n", alhpa[i]);
+        printf("%-3c", alhpa[i]);
     }
 
     return 0;

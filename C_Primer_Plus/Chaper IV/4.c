@@ -1,9 +1,11 @@
 #include <stdio.h>
 
+#define LEN 30
+
 int main(void)
 {
     float height;
-    char name[40];
+    char name[LEN];
 
     printf("Please Enter your Height: ");
     scanf("%f", &height);
