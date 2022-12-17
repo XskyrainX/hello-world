@@ -3,6 +3,7 @@
         "conio.h": "c",
         "stdio.h": "c",
         "ctype.h": "c",
-        "cctype": "c"
+        "cctype": "c",
+        "hotel.h": "c"
     }
 }
